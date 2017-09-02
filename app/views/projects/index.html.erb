@@ -1,6 +1,33 @@
-<% @project.each do |project| %>
-  <div class="post_wrapper">
-    <h2 class="title"> <%= link_to project.title, project %></h2>
-    <p class="date"> <%= project.created_at.strftime("%B, %d, %Y") %></p>
+
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <img class="img-fluid" src="img/profile.png" alt="">
+    <div class="intro-text">
+      <span class="name">Start Bootstrap</span>
+      <hr class="star-light">
+      <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+    </div>
   </div>
-<% end %>
+</header>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
