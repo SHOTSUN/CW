@@ -1,0 +1,6 @@
+<% @project.each do |project| %>
+  <div class="post_wrapper">
+    <h2 class="title"> <%= link_to project.title, project %></h2>
+    <p class="date"> <%= project.created_at.strftime("%B, %d, %Y") %></p>
+  </div>
+<% end %>
