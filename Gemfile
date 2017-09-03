@@ -4,6 +4,7 @@ gem 'devise', '~> 4.2'
 gem 'activeadmin'
 gem 'draper'
 gem 'pundit'
+gem 'active_skin'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
