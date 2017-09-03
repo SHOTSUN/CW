@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-#HELLO
+gem 'devise', '~> 4.2'
+gem 'activeadmin'
+gem 'draper'
+gem 'pundit'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
