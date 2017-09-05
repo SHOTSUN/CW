@@ -1,75 +1,33 @@
+
 <!-- Header -->
 <header class="masthead">
   <div class="container">
     <img class="img-fluid" src="img/profile.png" alt="">
     <div class="intro-text">
       <span class="name">Start Bootstrap</span>
+      <hr class="star-light">
       <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
     </div>
   </div>
 </header>
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Projects</h2>
-      </div>
-    </div>
-    <div class="row">
-      <% @projects.each do |post| %>
-          <div class="col-sm-4 portfolio-item">
-            <%= link_to project_path(post) do %>
-                <%= image_tag post.image, class: 'img-responsive' %>
-            <% end %>
-          </div>
-      <% end %>
-    </div>
-  </div>
-</section>
-
-
-<!-- About Section -->
-<section class="success" id="about">
-  <div class="container">
-    <h2 class="text-center">About</h2>
-    <div class="row">
-      <div class="col-lg-4 ml-auto">
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-      </div>
-      <div class="col-lg-4 mr-auto">
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-      </div>
-      <div class="col-lg-8 mx-auto text-center">
-        <a href="#" class="btn btn-lg btn-outline">
-          <i class="fa fa-download"></i>
-          Download Theme
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2><%= mail_to "hello@open-labs.io", "Contact Me", subject: "Hi! Please include your name and email address" %></h2><br>
-        <hr class="star-primary">
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top d-lg-none">
-  <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
 
+<!-- Custom scripts for this template -->
+<script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

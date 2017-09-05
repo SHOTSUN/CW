@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'devise', '~> 4.2'
-gem 'draper'
-gem 'pundit'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
-
+#HELLO
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
