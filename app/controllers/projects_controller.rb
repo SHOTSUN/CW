@@ -5,11 +5,12 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @project = current_user.projects.build
 
   end
 
   def create
-    @project = Project.new(project_params)
+    @project = current_user.projects.build(project_params)
     @project.save
 
     redirect_to @project
