@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
 
-  before_action :authenticate_user!
 
   def index
     @project = Project.all.order('created_at DESC')
@@ -20,6 +19,8 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @projects_all = Project.all
+    @projects = Project.order("created_at desc").limit(4).offset(1)
   end
 
   private

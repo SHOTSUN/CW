@@ -1,11 +1,47 @@
-<h1 class="title">
-  <%= @project.title %>
-</h1>
+<!-- Page Content -->
+<div class="container post-container">
 
-<p class = "date">
-  Submitted <%= time_ago_in_words(@project.created_at) %> Ago
-</p>
+  <h2>77777</h2>
 
-<p class="body">
-  <%= @project.body %>
-</p>
+  <!-- Portfolio Item Heading -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header"><%= @project.title %>
+        <small>Item Subheading</small>
+      </h1>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col-md-8">
+      <%= image_tag "profile.png", class: "img-responsive" %>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Project Description</h3>
+      <p><%= @project.body %></p>
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  <!-- Related Projects Row -->
+  <div class="row">
+
+    <div class="col-lg-12">
+      <h3 class="page-header">Related Projects</h3>
+    </div>
+
+    <% @projects.each do |post| %>
+        <div class="col-sm-3 col-xs-6">
+          <%= link_to project_path(post) do %>
+          <% end %>
+        </div>
+    <% end %>
+
+  </div>
+  <!-- /.row -->
+</div>

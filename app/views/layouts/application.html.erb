@@ -13,16 +13,14 @@
 
   </head>
 
+
+
   <body>
 
 
     <%= render 'layouts/shared/header' %>
 
-    <% if current_user %>
-      <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
-    <% else %>
-      <li><%= link_to "Sign in", new_user_session_path %></li>
-    <% end %>
+
 
     <%= yield %>
     <%= render 'layouts/shared/footer' %>
