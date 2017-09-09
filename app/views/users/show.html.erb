@@ -1,7 +1,5 @@
-<p><%= email%></p>
-
 
 <% @user_projects.each do |project|%>
-  <%= link_to project.title, project_path(project) %>
+  <%= link_to project.image, project_path(project) %>
 <% end %>
 

@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
-    @user_projects = @user.projects
+    @user_projects = User.find(current_user).projects
   end
+
+  def index
+  end
+
 end

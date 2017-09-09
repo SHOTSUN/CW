@@ -6,13 +6,15 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = current_user.projects.build
+    @project = Project.new
+        #current_user.projects.build
 
   end
 
   def create
-    @project = current_user.projects.build(project_params)
-    @project.save
+    @project = Project.new(project_params)
+        #current_user.projects.build(project_params)
+    #@project.save
 
     redirect_to @project
   end
@@ -25,7 +27,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title, :body)
+      params.require(:project).permit(:title, :body, :image)
     end
 
 end

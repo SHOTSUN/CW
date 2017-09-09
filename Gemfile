@@ -3,8 +3,13 @@ source 'https://rubygems.org'
 #HELLO
 
 gem 'rails_admin', '~> 1.2'
-
 gem 'devise', '~> 4.3'
+gem 'omniauth'
+gem 'paperclip'
+gem 'dropzonejs-rails'
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
 # Use mysql as the database for Active Record
