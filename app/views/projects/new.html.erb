@@ -1,31 +1,13 @@
 <h1>New project </h1>
 
-<%= form_for :project,url: projects_path, html: { multipart: true,
-     class: "dropzone", id: "my-dropzonev"}  do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-
-    <p>
-      <%= f.label :body %><br>
-      <%= f.text_field :body %>
-    </p>
-
-
-    <div class="dz-message needsclick">
-      <h3> Drop file here </h3>
-      <strong>click</strong> to upload
-    </div>
-    <div class="fallback">
-      <%= f.file_field :image %>
-      <%= f.submit "Upload the Image" %>
-
-    </div>
 
 
 
-<% end%>
 
+<%= bootstrap_form_for(@project) do |f| %>
+    <%= f.email_field :title %>
+    <%= f.password_field :body %>
+    <%= f.file_field :image %>
+    <%= f.submit "Log In" %>
+<% end %>
 

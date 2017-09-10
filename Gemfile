@@ -7,6 +7,8 @@ gem 'devise', '~> 4.3'
 gem 'omniauth'
 gem 'paperclip'
 gem 'dropzonejs-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
 
 
 

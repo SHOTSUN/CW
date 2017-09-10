@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     post 'signin', to: 'devise/sessions#create', as: :user_session2
     match 'signout', to: 'devise/sessions#destroy', as: :destroy_user_session2, via: Devise.mappings[:user].sign_out_via
   end
+
+
   resources  :projects
   resources  :users
   root "home#index"

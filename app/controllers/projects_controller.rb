@@ -2,21 +2,23 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @project = Project.all.order('created_at DESC')
+    @project = Project.new
+        #all.order('created_at DESC')
   end
 
   def new
-    @project = Project.new
-        #current_user.projects.build
+    @project = current_user.projects.build
 
   end
 
   def create
-    @project = Project.new(project_params)
-        #current_user.projects.build(project_params)
-    #@project.save
+    @project = current_user.projects.build(project_params)
+    if @project.save
+      render  json: { message: "success", projectId: @project.id}, status: 200
+    else
+      render json: {error: @project.errors.full_messages.join(", ")}, status: 400
+    end
 
-    redirect_to @project
   end
 
   def show
