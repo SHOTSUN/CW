@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   root to: "projects#index"
 
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks"}
+  devise_for :users, :controllers => { :omniauth_callbacks => 'callbacks'}
   as :user do
     get 'signin', to: 'devise/sessions#new', as: :new_user_session2
     post 'signin', to: 'devise/sessions#create', as: :user_session2

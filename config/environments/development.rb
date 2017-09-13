@@ -1,4 +1,22 @@
 Rails.application.configure do
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+  config.mailer_sender = 'crowdfounding <crowdfounding@crowdfounding.com>'
+
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com", #this is you remote mail server, if you do not specify it rails will use
+      port: 587, # the port at which mail server is running, for local host it is at 25
+      domain: "example.com", # just giving a domain name to you smtp server, you can use any name
+      authentication: "plain", # If your mail server requires authentication, you need to specify
+      enable_starttls_auto: true,
+      user_name: "kvladk1997@gmail.com",
+      password:  "19970501vlad"
+  }
+
+
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.default_url_options = { host: 'localhost', port: 3300 }
   # In the development environment your application's code is reloaded on
@@ -26,8 +44,6 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
 

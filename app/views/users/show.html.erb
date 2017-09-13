@@ -1,5 +1,10 @@
-
+<div class="row">
 <% @user_projects.each do |project|%>
-  <%= link_to project.image, project_path(project) %>
+    <div class="portfolio-item">
+      <%= link_to project_path(project) do %>
+          <%= image_tag project.image %>
+      <% end %>
+    </div>
 <% end %>
+</div>
 
