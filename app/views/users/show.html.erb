@@ -1,10 +1,16 @@
-<div class="row">
-<% @user_projects.each do |project|%>
-    <div class="portfolio-item">
-      <%= link_to project_path(project) do %>
-          <%= image_tag project.image %>
-      <% end %>
-    </div>
-<% end %>
-</div>
 
+<a class="btn btn-success btn-block" <%= link_to "Create new Project", new_project_path %></a>
+
+<div class="row">
+  <% @user_projects.each do |post| %>
+    <div class="col-md-8">
+      <img class="img-fluid" <%= image_tag post.image %>
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="my-3"><%= post.title %></h3>
+      <p><%= post.body %></p>
+    </div>
+
+  <% end %>
+</div>

@@ -14,9 +14,14 @@ class ProjectsController < ApplicationController
   def create
     @project = current_user.projects.build(project_params)
     if @project.save
-      render  json: { message: "success", projectId: @project.id}, status: 200
+
+      #redirect_to projects_path, :notice => "Post has been saved successfully."
+
+      flash[:success] = "This account has been blocked..."
+      #render  json: { message: "success", projectId: @project.id}, status: 200
     else
-      render json: {error: @project.errors.full_messages.join(", ")}, status: 400
+      flash[:error] = "Welcome to the Sample App!"
+      #render json: {error: @project.errors.full_messages.join(", ")}, status: 400
     end
 
   end

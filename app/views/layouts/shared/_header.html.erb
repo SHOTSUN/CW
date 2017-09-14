@@ -8,22 +8,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
 
-        </li>
-        <li class="nav-item">
+
         <% if current_user %>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" <%= link_to "Sign out", destroy_user_session_path, method: "delete" %></a>
-        <% else %>
-              <a class="nav-link js-scroll-trigger" <%= link_to "Sign in", new_user_session_path %></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" <%= link_to "Profile", current_user %></a>
+            </li>
 
+      <% else %>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" <%= link_to "Sign in", new_user_session_path %></a>
+            </li>
         <% end %>
         </li>
         <button id = "change-theme-btn"> Change theme</button>
