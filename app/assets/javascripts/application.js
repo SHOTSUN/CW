@@ -14,6 +14,12 @@
 //= require jquery_ujs
 //= require dropzone
 //= require turbolinks
+//= require change-theme
 //= require_tree .
+
+
+
+
+
 
 

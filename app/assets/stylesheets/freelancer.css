@@ -135,8 +135,8 @@ section.success {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s; }
@@ -343,7 +343,7 @@ footer {
   footer .footer-col {
     margin-bottom: 50px; }
   footer .footer-below {
-    padding: 25px 0;
+    padding: 20px 0;
     background-color: #2c3e50; }
 
 .btn-outline {
