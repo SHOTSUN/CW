@@ -1,16 +1,44 @@
 
-<a class="btn btn-success btn-block" <%= link_to "Create new Project", new_project_path %></a>
+<div class="panel-heading">
+  <div class="row">
+    <div class="col col-xs-6">
+      <h3 class="panel-title"><%= current_user.email %></h3>
+    </div>
+    <div class="col col-xs-6 text-right">
+      <a type="button" class="btn btn-sm btn-primary btn-success" <%= link_to "Create new Project", new_project_path %></button>
+    </div>
+  </div>
+</div>
 
-<div class="row">
-  <% @user_projects.each do |post| %>
-    <div class="col-md-8">
+<% @user_projects.each do |post| %>
+
+
+<div class="content-box-large">
+
+  <div class="row">
+
+    <div class="col-sm-6">
       <img class="img-fluid" <%= image_tag post.image %>
     </div>
 
-    <div class="col-md-4">
-      <h3 class="my-3"><%= post.title %></h3>
-      <p><%= post.body %></p>
+    <div class="col-sm-6">
+      <div class="content-box-large">
+        <h3><%= post.title %></h3>
+        <h4> Pledge: <%= post.collected %> <i class="fa fa-dollar" ></i></h4>
+        <h4> Goal: <%= post.pledge %> <i class="fa fa-dollar" ></i></h4>
+        <a type="button" class="btn btn-danger btn-block" <%= link_to "Delete project", dest_project_path(post) %></button>
+      </div>
     </div>
 
-  <% end %>
+    <div class="col-sm-12">
+      <p>  <%= post.body %> </p>
+    </div>
+  </div>
+
 </div>
+
+
+
+
+
+<% end %>

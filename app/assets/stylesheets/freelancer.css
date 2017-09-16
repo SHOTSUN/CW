@@ -8,7 +8,7 @@ body {
   overflow-x: hidden; }
 
 p {
-  font-size: 20px; }
+  font-size: 15px; }
 
 p.small {
   font-size: 16px; }
@@ -329,6 +329,7 @@ header.masthead {
 
 .floating-label-form-group-with-focus label {
   color: #18BC9C; }
+
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee; }

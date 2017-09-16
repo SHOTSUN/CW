@@ -13,12 +13,12 @@ Rails.application.routes.draw do
 
 
   devise_for :users, :controllers => { :omniauth_callbacks => 'callbacks'}
-  as :user do
-    get 'signin', to: 'devise/sessions#new', as: :new_user_session2
-    post 'signin', to: 'devise/sessions#create', as: :user_session2
-    match 'signout', to: 'devise/sessions#destroy', as: :destroy_user_session2, via: Devise.mappings[:user].sign_out_via
-  end
 
+  resources :projects do
+    member do
+      get :dest
+    end
+  end
 
   resources  :projects
   resources  :users

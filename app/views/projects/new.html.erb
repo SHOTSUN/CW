@@ -3,17 +3,11 @@
 
 
 
-
 <%= bootstrap_form_for(@project) do |f| %>
+    <%= f.number_field :pledge, min: 1%>
     <%= f.text_field :title, hide_label: true, placeholder: "Wrire Project name..." %>
     <%= f.text_area :body, hide_label: true, placeholder: "Wrire description..." %>
-    <div class="form-group">
-      <img id="img_prev" width=300 height=300 src="#" alt="your image" class="img-thumbnail hidden"/> <br/>
-      <span class="btn btn-default btn-file">
-    Upload Avatar Image<%= f.file_field :image, id: "avatar-upload" %>
-  </span>
-
-    </div>
+    <%= f.file_field :image, accept:'image/png'%>
 
     <%= f.submit "Create" %>
 

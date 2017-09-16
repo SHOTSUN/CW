@@ -11,13 +11,18 @@ class ProjectsController < ApplicationController
 
   end
 
+  def dest
+    @project = Project.find(params[:id]).destroy
+    redirect_to user_session_url
+  end
+
   def create
     @project = current_user.projects.build(project_params)
     if @project.save
 
-      #redirect_to projects_path, :notice => "Post has been saved successfully."
+      redirect_to projects_path, :notice => "Post has been saved successfully."
 
-      flash[:success] = "This account has been blocked..."
+      #:flash[:success] = "This account has been blocked..."
       #render  json: { message: "success", projectId: @project.id}, status: 200
     else
       flash[:error] = "Welcome to the Sample App!"
@@ -34,7 +39,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title, :body, :image)
+      params.require(:project).permit(:title, :body, :image, :pledge)
     end
 
 end

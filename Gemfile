@@ -9,8 +9,8 @@ gem 'paperclip'
 gem 'dropzonejs-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
-
-
+gem 'stripe'
+gem 'imagedrop'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
