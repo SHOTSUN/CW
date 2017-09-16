@@ -22,13 +22,26 @@
     </div>
 
     <div class="col-sm-6">
-      <div class="content-box-large">
+
+
+
+      <div class="content-box large">
+
         <h3><%= post.title %></h3>
         <h4> Pledge: <%= post.collected %> <i class="fa fa-dollar" ></i></h4>
         <h4> Goal: <%= post.pledge %> <i class="fa fa-dollar" ></i></h4>
-        <a type="button" class="btn btn-danger btn-block" <%= link_to "Delete project", dest_project_path(post) %></button>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">
+            <%= post.calculateProgress %>%Complete (success)
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-danger btn-block" <%= link_to "Delete project", dest_project_path(post) %></button>
+
       </div>
     </div>
+
 
     <div class="col-sm-12">
       <p>  <%= post.body %> </p>

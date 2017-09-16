@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
     redirect_to user_session_url
   end
 
+
   def create
     @project = current_user.projects.build(project_params)
     if @project.save
