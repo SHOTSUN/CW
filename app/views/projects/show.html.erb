@@ -21,7 +21,7 @@
       <p><%= @project.body %></p>
     </div>
     <div class="col-md-4">
-      <h5>Project Creator: <%= User.find_by_uid(@project.user_id).email %></h5>
+      <h5>Project Creator: <%= @project.user.email %></h5>
     </div>
 
   </div>
