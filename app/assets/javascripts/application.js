@@ -12,9 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require change-theme
-//= require imagedrop
+//= require bootstrap
 //= require_tree .
 
 

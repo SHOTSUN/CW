@@ -10,7 +10,9 @@
   </div>
 </div>
 
-<% @user_projects.each do |post| %>
+
+
+<% User.find(current_user).project do |post| %>
 
 
 <div class="content-box-large">
@@ -28,8 +30,13 @@
       <div class="content-box large">
 
         <h3><%= post.title %></h3>
-        <h4> Pledge: <%= post.collected %> <i class="fa fa-dollar" ></i></h4>
-        <h4> Goal: <%= post.pledge %> <i class="fa fa-dollar" ></i></h4>
+        <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= post.collected %></i></h3>
+
+        <span class="block navy-600 type-12 type-14-md lh3-lg">
+          pledged of <span class="money">$<%= post.pledge %></span> <span class="mobile-hide">goal</span>
+        </span>
+
+
 
         <div class="progress">
           <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">
@@ -37,10 +44,27 @@
           </div>
         </div>
 
-        <button type="button" class="btn btn-danger btn-block" <%= link_to "Delete project", dest_project_path(post) %></button>
+        <a href="#<%=post.title%>" class="btn btn-danger btn-block" data-toggle="modal">Delete Project</a>
+        <div id="<%=post.title%>" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                Are you sure you want to delete the project <%= post.title%>?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-danger" <%= link_to "Delete", dest_project_path(post) %></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
       </div>
     </div>
+
+
 
 
     <div class="col-sm-12">

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user_projects = User.find(current_user).projects
+    @user_project = User.find(current_user).project
   end
 
   def index

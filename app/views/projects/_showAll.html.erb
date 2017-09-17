@@ -13,7 +13,32 @@
       <% Project.find_each do |post| %>
           <div class="col-sm-4 portfolio-item">
             <%= link_to project_path(post) do %>
-                <%= image_tag post.image %>
+                <%= image_tag post.image, height: 350 %>
+                <a href="#<%=post.title%>" class="btn btn-success btn-block" data-toggle="modal">Pledge to Project</a>
+                <div id="<%=post.title%>" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Pledge to Project</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <%= form_tag("/projects", method: "add") do %>
+                            <%= text_field_tag :id, nil,  placeholder: 'Enter search term...'%>
+                        <% end %>
+
+
+
+
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-danger" <%= link_to "Delete", project_pledge_path(post) %></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             <% end %>
           </div>
       <% end %>

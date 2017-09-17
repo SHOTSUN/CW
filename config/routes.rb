@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'home/index'
 
   get '/profile' => "users#show", as: :user_root
+  get '/pledge' => 'projects#pledgeForm', :as => :project_pledge
 
   get 'users/show'
   get 'projects/show'
@@ -20,12 +21,17 @@ Rails.application.routes.draw do
     end
   end
 
-  resources  :projects
   resources  :users
   root "home#index"
   root "users#index"
   root "projects#index"
 
   root "projects#new"
+
+  resources :projects do
+    member do
+      get :add
+    end
+  end
 
 end
