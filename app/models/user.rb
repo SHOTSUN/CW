@@ -1,13 +1,14 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
+
+  has_and_belongs_to_many :projects, join_table: "users_projects"
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable,
          :confirmable
 
 
-  has_many :project_users
-  has_many :project, through: :project_users
+
+
 
 
 end

@@ -11,8 +11,7 @@
 </div>
 
 
-
-<% User.find(current_user).project do |post| %>
+<% current_user.projects.each do |post| %>
 
 
 <div class="content-box-large">
