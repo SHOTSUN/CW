@@ -11,5 +11,11 @@
       <user-name>root</user-name>
       <introspection-schemas>*:сroweding_development</introspection-schemas>
     </data-source>
+    <data-source name="postgres@localhost" uuid="eb741b0f-b24a-40a6-b114-eb64f7864274">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
   </component>
 </project>

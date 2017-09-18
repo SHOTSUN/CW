@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fc1799-c84a-41cf-923e-43da4b55d6ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20170917182426_create_users_projects.rb" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donations/_donation.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/donations/_form.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/002/medium/Pepsi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/002/original/Pepsi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/002/thumb/Pepsi.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/001/medium/Pepsi.png" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/medium/Pepsi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/001/thumb/Pepsi.png" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/thumb/Pepsi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/1e00b932-662e-43ee-b23b-3fdaa18b1617.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1e00b932-662e-43ee-b23b-3fdaa18b1617.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profile.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/show.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/show.html.erb" />
@@ -57,81 +61,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="projects_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
+      <file leaf-file-name="donations_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/donations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="66" lean-forward="false" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/project.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,8 +74,48 @@
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="234">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_donation.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/donations/_donation.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/donations/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -152,6 +126,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_comment.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -199,10 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/Theme_Blue.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/change_theme.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/cable.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/projects.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/shared/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
@@ -243,13 +243,17 @@
         <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profile.css" />
-        <option value="$PROJECT_DIR$/app/views/projects/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20170918213043_create_donations.rb" />
         <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/donations/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/projects/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/donations/_donation.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/donations_controller.rb" />
       </list>
     </option>
   </component>
@@ -324,12 +328,6 @@
               <item name="CW" type="b2602c69:ProjectViewProjectNode" />
               <item name="CW" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CW" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,6 +342,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="comments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CW" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="donations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CW" type="b2602c69:ProjectViewProjectNode" />
@@ -416,7 +421,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="git&#9;ACTION&#9;Github.Share" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -535,7 +540,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194438000" />
+    <option name="totallyTimeSpent" value="196855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="24" width="1311" height="780" extended-state="6" />
@@ -581,32 +586,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170916160759_add_attachment_collected_to_projects.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170916224356_create_pledges.rb" />
-    <entry file="file://$PROJECT_DIR$/test/models/pledge_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/project_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170916224530_create_pledges.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pledges.coffee" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170905190022_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170916230648_user_projects.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170917003653_users_posts.rb" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1e00b932-662e-43ee-b23b-3fdaa18b1617/console.sql">
@@ -636,14 +615,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170917003800_create_users_posts.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170917014113_project_user.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170917135457_add_collected_to_projects.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170905190705_add_devise_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -777,32 +748,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/project_user.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20170917014155_create_project_users.rb" />
-    <entry file="uml://DATABASE/1e00b932-662e-43ee-b23b-3fdaa18b1617.SCHEMA:сroweding_development">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>1e00b932-662e-43ee-b23b-3fdaa18b1617.SCHEMA:сroweding_development</OriginalElement>
-          <nodes>
-            <node x="246.0" y="581.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.ar_internal_metadata</node>
-            <node x="492.0" y="581.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.schema_migrations</node>
-            <node x="351.0" y="0.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects</node>
-            <node x="0.0" y="581.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.project_users</node>
-            <node x="0.0" y="0.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.users</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7755644090305445" x="180.0" y="299.0" />
-          <SelectedNodes>
-            <node>1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.ar_internal_metadata</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170906190546_add_attachment_image_to_projects.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -883,75 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/1e00b932-662e-43ee-b23b-3fdaa18b1617">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>1e00b932-662e-43ee-b23b-3fdaa18b1617</OriginalElement>
-          <nodes>
-            <node x="444.5" y="598.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.pledges</node>
-            <node x="690.5" y="0.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.ar_internal_metadata</node>
-            <node x="102.75" y="586.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.comments</node>
-            <node x="0.0" y="807.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.schema_migrations</node>
-            <node x="367.6911764705883" y="71.0735294117647">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects</node>
-            <node x="0.0" y="0.0">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.users</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.pledges" target="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects">
-              <point x="0.0" y="-76.0" />
-              <point x="73.0" y="160.0" />
-            </edge>
-            <edge source="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.comments" target="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.users">
-              <point x="-50.25" y="-88.0" />
-              <point x="0.0" y="268.0" />
-            </edge>
-            <edge source="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.comments" target="1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects">
-              <point x="50.25" y="-88.0" />
-              <point x="253.5" y="561.0" />
-              <point x="399.0" y="561.0" />
-              <point x="-73.0" y="160.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8395061728395061" x="169.88235294117646" y="275.88235294117646" />
-          <SelectedNodes>
-            <node>1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170918162755_create_comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170917135613_add_collected_to_projects.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170916152049_project_body_change_text.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170915182844_add_pledge_to_projects.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -964,70 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://RailsDependency/User">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>User</OriginalElement>
-          <nodes>
-            <node x="640.0" y="183.98958333333334">Project</node>
-            <node x="0.0" y="0.0">User</node>
-            <node x="365.0" y="271.3541666666667">Comment</node>
-            <node x="915.0" y="268.4895833333333">ApplicationRecord</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Comment" target="Project">
-              <point x="97.5" y="-0.0" />
-              <point x="-97.5" y="66.66666666666669" />
-            </edge>
-            <edge source="Comment" target="ApplicationRecord">
-              <point x="97.5" y="34.666666666666686" />
-              <point x="640.0" y="394.48958333333337" />
-              <point x="835.0" y="394.48958333333337" />
-              <point x="-79.5" y="10.333333333333314" />
-            </edge>
-            <edge source="User" target="Project">
-              <point x="142.5" y="-2.8421709430404007E-14" />
-              <point x="560.0" y="256.0" />
-              <point x="-97.5" y="-66.66666666666669" />
-            </edge>
-            <edge source="Project" target="Comment">
-              <point x="-97.5" y="-0.0" />
-              <point x="97.5" y="-34.666666666666686" />
-            </edge>
-            <edge source="User" target="Comment">
-              <point x="142.5" y="170.66666666666663" />
-              <point x="-97.5" y="-0.0" />
-            </edge>
-            <edge source="User" target="ApplicationRecord">
-              <point x="142.5" y="-170.66666666666666" />
-              <point x="365.0" y="173.48958333333334" />
-              <point x="835.0" y="173.48958333333334" />
-              <point x="-79.5" y="-10.333333333333314" />
-            </edge>
-            <edge source="Project" target="ApplicationRecord">
-              <point x="97.5" y="-0.0" />
-              <point x="-79.5" y="-0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.6718464351005484" x="347.2244897959184" y="157.76326530612243" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Association fields</Category>
-            <Category>Migration fields</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1036,10 +852,238 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170918162755_create_comments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170917135613_add_collected_to_projects.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="71" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170915182844_add_pledge_to_projects.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/1e00b932-662e-43ee-b23b-3fdaa18b1617">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>1e00b932-662e-43ee-b23b-3fdaa18b1617</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6938775510204082" x="262.25" y="335.88235294117646" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb741b0f-b24a-40a6-b114-eb64f7864274/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170918213043_create_donations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/donation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/User">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>User</OriginalElement>
+          <nodes>
+            <node x="640.0" y="208.8273809523809">Project</node>
+            <node x="0.0" y="0.0">User</node>
+            <node x="365.0" y="320.25297619047615">Comment</node>
+            <node x="1186.0" y="282.0773809523809">ApplicationRecord</node>
+            <node x="915.0" y="178.3273809523809">Donation</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Project" target="Donation">
+              <point x="97.5" y="-56.0" />
+              <point x="-95.5" y="20.0" />
+            </edge>
+            <edge source="Comment" target="Project">
+              <point x="97.5" y="-0.0" />
+              <point x="-97.5" y="74.66666666666669" />
+            </edge>
+            <edge source="Comment" target="ApplicationRecord">
+              <point x="97.5" y="34.666666666666686" />
+              <point x="640.0" y="443.3273809523809" />
+              <point x="1106.0" y="443.3273809523809" />
+              <point x="-79.5" y="11.625" />
+            </edge>
+            <edge source="User" target="Project">
+              <point x="142.5" y="67.0" />
+              <point x="365.0" y="291.91666666666663" />
+              <point x="560.0" y="291.91666666666663" />
+              <point x="-97.5" y="-74.66666666666669" />
+            </edge>
+            <edge source="Project" target="Comment">
+              <point x="-97.5" y="-0.0" />
+              <point x="97.5" y="-34.666666666666686" />
+            </edge>
+            <edge source="User" target="Comment">
+              <point x="142.5" y="201.0" />
+              <point x="-97.5" y="-0.0" />
+            </edge>
+            <edge source="User" target="ApplicationRecord">
+              <point x="142.5" y="-201.0" />
+              <point x="365.0" y="167.8273809523809" />
+              <point x="1106.0" y="167.8273809523809" />
+              <point x="-79.5" y="-11.625" />
+            </edge>
+            <edge source="Project" target="ApplicationRecord">
+              <point x="97.5" y="56.0" />
+              <point x="1106.0" y="376.8273809523809" />
+              <point x="-79.5" y="3.875" />
+            </edge>
+            <edge source="Donation" target="ApplicationRecord">
+              <point x="95.5" y="-0.0" />
+              <point x="-79.5" y="-3.875" />
+            </edge>
+            <edge source="User" target="Donation">
+              <point x="142.5" y="-67.0" />
+              <point x="365.0" y="198.3273809523809" />
+              <point x="-95.5" y="-19.999999999999993" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5384615384615384" x="435.7142857142857" y="145.4285714285714" />
+          <SelectedNodes>
+            <node>User</node>
+            <node>Donation</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/1e00b932-662e-43ee-b23b-3fdaa18b1617.SCHEMA:сroweding_development">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>1e00b932-662e-43ee-b23b-3fdaa18b1617.SCHEMA:сroweding_development</OriginalElement>
+          <nodes>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.ar_internal_metadata</node>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.comments</node>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.schema_migrations</node>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.donations</node>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.projects</node>
+            <node x="" y="">1e00b932-662e-43ee-b23b-3fdaa18b1617.TABLE:сroweding_development.users</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6938775510204082" x="452.63235294117646" y="271.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170918213558_create_donations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1054,64 +1098,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="108">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/donations/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="66" lean-forward="false" selection-start-line="1" selection-start-column="66" selection-end-line="1" selection-end-column="66" />
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/donations/_donation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/donations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

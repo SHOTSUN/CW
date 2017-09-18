@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170918162755) do
+ActiveRecord::Schema.define(version: 20170918213558) do
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "content",    limit: 65535
@@ -22,12 +22,14 @@ ActiveRecord::Schema.define(version: 20170918162755) do
     t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
-  create_table "pledges", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "pledge",     default: 0, null: false
+  create_table "donations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "pledge"
     t.integer  "project_id"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.index ["project_id"], name: "index_pledges_on_project_id", using: :btree
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_donations_on_project_id", using: :btree
+    t.index ["user_id"], name: "index_donations_on_user_id", using: :btree
   end
 
   create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -72,5 +74,6 @@ ActiveRecord::Schema.define(version: 20170918162755) do
 
   add_foreign_key "comments", "projects"
   add_foreign_key "comments", "users"
-  add_foreign_key "pledges", "projects"
+  add_foreign_key "donations", "projects"
+  add_foreign_key "donations", "users"
 end
