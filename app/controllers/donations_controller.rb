@@ -9,6 +9,7 @@ class DonationsController < ApplicationController
     @donation.save
 
     if @donation.save
+      @project.add(@donation.pledge)
       redirect_to project_path(@project)
     else
       render 'new'

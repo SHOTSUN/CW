@@ -9,7 +9,6 @@ class Project < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   def calculateProgress
-    self.add(5)
    ((self.collected.fdiv self.pledge)*100).round
 
   end
