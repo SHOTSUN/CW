@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => 'callbacks'}
 
   resources :projects do
+    resources :comments
     member do
       get :dest
     end
@@ -27,11 +28,5 @@ Rails.application.routes.draw do
   root "projects#index"
 
   root "projects#new"
-
-  resources :projects do
-    member do
-      get :add
-    end
-  end
 
 end

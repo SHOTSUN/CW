@@ -2,8 +2,7 @@ class ProjectsController < ApplicationController
 
 
   def index
-    @project = Project.new
-        #all.order('created_at DESC')
+    @project = Project.all.order('created_at DESC')
   end
 
   def new
@@ -33,6 +32,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @comments = Comment.where(project_id: @project).order("created_at DESC")
     @project = Project.find(params[:id])
     @projects_all = Project.all
     @projects = Project.order("created_at desc").limit(4).offset(1)

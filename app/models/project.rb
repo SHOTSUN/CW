@@ -1,6 +1,7 @@
 class Project < ApplicationRecord
 
   belongs_to :user
+  has_many :comments, dependent: :destroy
 
 
   has_attached_file :image, styles: { medium: "300x300>", thumb: "120x120>" }

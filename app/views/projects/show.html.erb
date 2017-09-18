@@ -27,12 +27,19 @@
   </div>
   <!-- /.row -->
 
+  <%= render 'comments/comment' %>
+
+
+
   <!-- Related Projects Row -->
   <div class="row">
 
     <div class="col-lg-12">
       <h3 class="page-header">Related Projects</h3>
     </div>
+
+
+
 
     <% @projects.each do |post| %>
         <div class="col-sm-3 col-xs-6">
@@ -41,6 +48,7 @@
         </div>
     <% end %>
 
+
   </div>
-  <!-- /.row -->
 </div>
+
