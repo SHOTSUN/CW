@@ -82,7 +82,6 @@ GEM
       tilt
     hashie (3.5.6)
     i18n (0.8.6)
-    imagedrop (0.0.5)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -243,9 +242,9 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   dropzonejs-rails
-  imagedrop
   jbuilder (~> 2.5)
   jquery-rails
+  jquery-ui-rails (~> 5.0.5)
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.5)
   omniauth

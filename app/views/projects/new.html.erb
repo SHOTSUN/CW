@@ -5,8 +5,14 @@
     <%= f.text_field :title, hide_label: true, placeholder: "Wrire Project name..." %>
     <%= f.text_area :body, hide_label: true, placeholder: "Wrire description..." %>
     <%= f.file_field :image, accept:'image/png' %>
+    <%= f.date_select :lastDate, start_year: Date.today.year %>
+
+
 
     <%= f.submit "Create" %>
+
+
+
 
 <% end %>
 

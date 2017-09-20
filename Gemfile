@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #HELLO
 
+gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'rails_admin', '~> 1.2'
 gem 'devise', '~> 4.3'
 gem 'omniauth'
@@ -10,7 +12,6 @@ gem 'dropzonejs-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'stripe'
-gem 'imagedrop'
 
 
 

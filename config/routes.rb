@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'home/index'
 
@@ -15,19 +17,22 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => 'callbacks'}
 
-  resources :projects do
-    resources :comments
-    resources :donations
-    member do
-      get :dest
+  scope ":locale" do
+
+    resources :projects do
+      resources :comments
+      resources :donations
+      member do
+        get :dest
+      end
     end
+
+    resources  :users
+    root "home#index"
+    root "users#index"
+    root "projects#index"
+    root "projects#new"
   end
 
-  resources  :users
-  root "home#index"
-  root "users#index"
-  root "projects#index"
-
-  root "projects#new"
 
 end

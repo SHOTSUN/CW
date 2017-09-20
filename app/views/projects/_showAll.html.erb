@@ -1,11 +1,11 @@
 
 <!-- Portfolio Grid Section -->
 
-
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Projects</h2>
+        
+        <h2><%= t "projects.header"%></h2>
         <hr class="star-primary">
       </div>
     </div>
@@ -27,14 +27,13 @@
 
                 <div class="mr2">
                   <span class="bold navy-600">$<%= post.pledge%></span>
-                  <span class="ml1 normal">pledged</span>
+                  <span class="ml1 normal"></span>
                 </div>
                 <div class="mr2">
                   <span class="bold navy-600">$<%= post.collected%></span>
-                  <span class="ml1 normal">funded</span>
+                  <span class="ml1 normal"><%= t "projects.colllected"%></span>
                 </div><div class="ksr_page_timer mr2" data-end_time="1506074400000">
-                  <span class="bold navy-600 js-num">3</span>
-                  <span class="js-text ml1">days to go</span>
+                  <span class="js-text ml1"> <%= (post.remainingsDays / 24.hours) %> days to go</span>
                 </div>
             </div>
           </div>
