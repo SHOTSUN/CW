@@ -1,34 +1,81 @@
-<!-- Page Content -->
-<div class="container post-container">
-  <!-- Portfolio Item Heading -->
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header"><%= @project.title %>
-      </h1>
+
+
+
+
+    <div class="content-box-large">
+
+      <div class="row">
+
+        <div class="col-sm-6">
+          <img class="img-fluid" <%= image_tag @project.image %>
+        </div>
+
+
+
+        <div class="col-sm-5">
+
+
+
+          <div class="content-box large">
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= @project.calculateProgress %>%">
+              </div>
+            </div>
+
+            <h3><%= @project.title %></h3>
+            <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= @project.collected %></i></h3>
+
+            <span class="block navy-600 type-12 type-14-md lh3-lg">
+          pledged of <span class="money">$<%= @project.pledge %></span> <span class="mobile-hide">goal</span>
+        </span>
+
+            <a href="#<%=@project.title%>" class="btn btn-success btn-block" data-toggle="modal">Back this project</a>
+            <div id="<%=@project.title%>" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    How much do you want to invest in <%= @project.title%> ?
+                  </div>
+                  <%= render 'donations/form' %>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class='hero aligin'>
+            <div class="dropdown">
+              <button class="dropbtn">Mouse over me</button>
+              <div class="dropdown-content">
+                <% @project.donations.each do |f| %>
+                    <p><%=f.pledge%></p>
+
+                <%end%>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12">
+          <p>  <%= @project.body %> </p>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <!-- /.row -->
 
-  <!-- Portfolio Item Row -->
-  <div class="row">
 
-    <div class="col-md-8">
-      <%= image_tag @project.image, class: "img-responsive" %>
-    </div>
-
-    <div class="col-md-4">
-      <h3>Project Description</h3>
-      <p><%= @project.body %></p>
-    </div>
-    <div class="col-md-4">
-      <h5>Project Creator: <%= @project.user.email %></h5>
-    </div>
-
-  </div>
-  <!-- /.row -->
-
-  <%= render 'donations/donation' %>
-
+    <%= render 'comments/comment' %>
+  <%if current_user%>
+    <%= render 'comments/form' %>
+  <%end%>
 
 
   <!-- Related Projects Row -->
@@ -37,9 +84,6 @@
     <div class="col-lg-12">
       <h3 class="page-header">Related Projects</h3>
     </div>
-
-
-
 
     <% @projects.each do |post| %>
         <div class="col-sm-3 col-xs-6">
@@ -50,5 +94,9 @@
 
 
   </div>
+
+
 </div>
+
+
 

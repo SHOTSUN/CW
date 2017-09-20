@@ -1,5 +1,9 @@
-<%= form_for([@project, @project.comments.new]) do |f|%>
-  <%= f.text_area :content %>
-  <%= f.submit %>
+<div class="pledge_margin "  >
+
+<%= bootstrap_form_for([@project, @project.comments.new]) do |f|%>
+  <%= f.text_area :content, label: 'Comment',:required => true, placeholder: "Write  a comment..." %>
+  <%= f.submit "Create" %>
 <%end%>
+
+</div>
 

@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170918213558) do
   end
 
   create_table "donations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "pledge"
+    t.integer  "pledge",     null: false
     t.integer  "project_id"
     t.integer  "user_id"
     t.datetime "created_at", null: false

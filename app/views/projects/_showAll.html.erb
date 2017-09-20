@@ -12,38 +12,40 @@
     <div class="row">
       <% Project.find_each do |post| %>
           <div class="col-sm-4 portfolio-item">
+            <div class="content-box-large">
+            <div class="page-header" align="center">
+              <h4><%= truncate(post.title, :length => 24) %></h4>
+            </div>
             <%= link_to project_path(post) do %>
                 <%= image_tag post.image, height: 350 %>
-                <a href="#<%=post.title%>" class="btn btn-success btn-block" data-toggle="modal">Pledge to Project</a>
-                <div id="<%=post.title%>" class="modal fade">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title">Pledge to Project</h4>
-                      </div>
-                      <div class="modal-body">
-
-                        <%= form_tag("/projects", method: "add") do %>
-                            <%= text_field_tag :id, nil,  placeholder: 'Enter search term...'%>
-                        <% end %>
-
-
-
-
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <a type="button" class="btn btn-danger" <%= link_to "Delete", project_pledge_path(post) %></button>
-                      </div>
-                    </div>
+            <% end %>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">
+                    <%= post.calculateProgress %>%Complete (success)
                   </div>
                 </div>
-            <% end %>
+
+                <div class="mr2">
+                  <span class="bold navy-600">$<%= post.pledge%></span>
+                  <span class="ml1 normal">pledged</span>
+                </div>
+                <div class="mr2">
+                  <span class="bold navy-600">$<%= post.collected%></span>
+                  <span class="ml1 normal">funded</span>
+                </div><div class="ksr_page_timer mr2" data-end_time="1506074400000">
+                  <span class="bold navy-600 js-num">3</span>
+                  <span class="js-text ml1">days to go</span>
+                </div>
+            </div>
           </div>
+
+
       <% end %>
     </div>
   </div>
 </section>
+
+
+
 
 

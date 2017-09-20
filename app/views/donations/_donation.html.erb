@@ -6,8 +6,7 @@
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <strong> <%= donation.user.email %> </strong>
-        <span class="date">Donated <%= time_ago_in_words(donation.created_at) %> </span>
+        <strong> <%= donation.project.user.email %> </strong>
       </div>
       <div class="panel-body">
         <%= donation.pledge %>
@@ -16,6 +15,3 @@
     </div><!-- /panel panel-default -->
 
 <% end %>
-
-
-<%= render 'donations/form' %>

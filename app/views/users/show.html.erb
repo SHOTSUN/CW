@@ -1,4 +1,6 @@
 
+
+
 <div class="panel-heading">
   <div class="row">
     <div class="col col-xs-6">
@@ -11,24 +13,30 @@
 </div>
 
 
+
+
+
 <% current_user.projects.each do |post| %>
 
 
 <div class="content-box-large">
 
+
   <div class="row">
 
     <div class="col-sm-6">
-      <img class="img-fluid" <%= image_tag post.image %>
+      <%= image_tag post.image, height: 450 %>
     </div>
 
-    <div class="col-sm-6">
+
+    <div class="col-sm-5">
 
 
 
       <div class="content-box large">
-
-        <h3><%= post.title %></h3>
+        <td class="text-right" aria-setsize="50">
+        <%= post.title %>
+        </td>
         <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= post.collected %></i></h3>
 
         <span class="block navy-600 type-12 type-14-md lh3-lg">
@@ -61,13 +69,23 @@
 
 
       </div>
+      
     </div>
 
-    <div class="col-sm-12">
-      <p>  <%= post.body %> </p>
-    </div>
+
+
+
+
+  </div>
+
+  <div>
+    <p>  <%= post.body %> </p>
   </div>
 
 </div>
 
+
+
 <% end %>
+
+

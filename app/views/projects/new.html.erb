@@ -1,8 +1,5 @@
 <h1>New project </h1>
 
-
-
-
 <%= bootstrap_form_for(@project) do |f| %>
     <%= f.number_field :pledge, min: 1%>
     <%= f.text_field :title, hide_label: true, placeholder: "Wrire Project name..." %>

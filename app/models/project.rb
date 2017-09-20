@@ -14,8 +14,10 @@ class Project < ApplicationRecord
   end
 
   def add(value)
-    self.update_attribute(:collected, self.collected + value)
-  end
+    if value > 0
+      self.update_attribute(:collected, self.collected + value)
+    end
+    end
 
 
 

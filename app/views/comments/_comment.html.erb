@@ -1,21 +1,27 @@
 
-<h2> This post has <%= pluralize(@project.comments.count, "Comment") %> </h2>
-
+<h2> <%= @project.title %> project has <%= pluralize(@project.comments.count, "Comment") %> </h2>
 
 <% @project.comments.each do |comment| %>
 
-  <div class="panel panel-default">
+  <div class="panel panel-default comment_margin "  >
     <div class="panel-heading">
       <strong> <%= comment.user.email %> </strong>
       <span class="date">Commented <%= time_ago_in_words(comment.created_at) %> </span>
+      (<%= link_to "Delete comment", [comment.project, comment], method: :delete %>)
+
     </div>
+
     <div class="panel-body">
       <%= comment.content %>
-      <%= link_to "Delete comment", [comment.project, comment], method: :delete %>
     </div><!-- /panel-body -->
   </div><!-- /panel panel-default -->
 
 <% end %>
 
 
-<%= render 'comments/form' %>
+
+
+
+
+
+
