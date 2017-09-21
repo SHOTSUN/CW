@@ -22,8 +22,7 @@ class ProjectsController < ApplicationController
 
     if @project.save
 
-      flash[:notice] = 'Something was successfully created.'
-      redirect_to projects_path, :notice => "Post has been saved successfully."
+      redirect_to project_path(@project)
      else
        render json: {error: @project.errors.full_messages.join(", ")}, status: 400
     end

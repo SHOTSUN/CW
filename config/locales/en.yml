@@ -20,11 +20,49 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+
+  devise:
+    email: "email"
+    password: "password"
+
   projects:
     header: "Projects"
     colllected: "collected"
+    welcome: "Sign in or sign up now"
+    changeTheme: "Change theme"
+    lang: "Language"
+    log_in: "Log in"
+    create_new: "Create new project"
+    pledged_of: "pledged of"
+    goal: "goal"
+    invest: "Invest in this project"
+    all_investitions: "Project pledges"
+    related_ptojects: "Related Projects"
+    has: "has"
+    commented: "commented"
+    ago: "ago"
+    create: "Создать"
+    how_much_invest: "How much do you want to invest in"
+
+
 
   links:
       home: "crowdfanding"
-
+      sign_up: "Sign up"
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      profile: "Profile"
+      forgot_your_password: "Forgot Your Password ?"
+      goal: "Goal"
+      image: "Image"
+      days_to_go: "Closing date of the project"
+      comment: "Comment"
+      delete_comment: "Delete comment"
+      comment_label: "Comment"
+      write_comment: "Write comment..."
+      pledge: "Pledge"
+      create: "Create"
+      delete_project: "Delete Project"
+      delete_project_confirmation: "Are you sure you want to delete the project"
+      close: "Close"
 

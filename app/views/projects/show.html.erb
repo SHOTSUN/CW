@@ -1,20 +1,12 @@
+ <div class="content-box-large">
 
-
-
-
-    <div class="content-box-large">
-
-      <div class="row">
+   <div class="row">
 
         <div class="col-sm-6">
           <img class="img-fluid" <%= image_tag @project.image %>
         </div>
 
-
-
         <div class="col-sm-5">
-
-
 
           <div class="content-box large">
 
@@ -27,16 +19,17 @@
             <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= @project.collected %></i></h3>
 
             <span class="block navy-600 type-12 type-14-md lh3-lg">
-          pledged of <span class="money">$<%= @project.pledge %></span> <span class="mobile-hide">goal</span>
-        </span>
+              <%= t("projects.pledged_of") %> <span class="money">$<%= @project.pledge %></span>
+            </span>
 
-            <a href="#<%=@project.title%>" class="btn btn-success btn-block" data-toggle="modal">Back this project</a>
+            <a href="#<%=@project.title%>" class="btn btn-success btn-block" data-toggle="modal"> <%= t("projects.invest") %> </a>
             <div id="<%=@project.title%>" class="modal fade">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-body">
-                    How much do you want to invest in <%= @project.title%> ?
+                    <%= t("projects.how_much_invest")%> <%= @project.title%> ?
                   </div>
+
                   <%= render 'donations/form' %>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -47,12 +40,15 @@
 
 
           </div>
-          <div class='hero aligin'>
+          <div class='hero center'>
             <div class="dropdown">
-              <button class="dropbtn">Mouse over me</button>
+              <button class="dropbtn"> <%= t("projects.all_investitions") %> </button>
               <div class="dropdown-content">
                 <% @project.donations.each do |f| %>
-                    <p><%=f.pledge%></p>
+
+                    <%if f.user%>
+                        <p> <%= f.pledge %>$ by <%=f.user.email %></p>
+                    <%end%>
                 <%end%>
               </div>
             </div>
@@ -78,12 +74,13 @@
   <div class="row">
 
     <div class="col-lg-12">
-      <h3 class="page-header">Related Projects</h3>
+      <h3 class="page-header"> <%= t("projects.related_ptojects") %></h3>
     </div>
 
     <% @projects.each do |post| %>
         <div class="col-sm-3 col-xs-6">
           <%= link_to project_path(post) do %>
+              <%= image_tag post.image, height: 250 %>
           <% end %>
         </div>
     <% end %>

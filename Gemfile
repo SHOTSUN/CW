@@ -5,14 +5,19 @@ source 'https://rubygems.org'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'rails_admin', '~> 1.2'
-gem 'devise', '~> 4.3'
-gem 'omniauth'
+
 gem 'paperclip'
 gem 'dropzonejs-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'stripe'
 
+gem 'devise', '~> 4.3'
+gem 'omniauth'
+gem 'omniauth-oauth'
+gem 'omniauth-vkontakte'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

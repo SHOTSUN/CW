@@ -1,11 +1,50 @@
 ru:
 
+  devise:
+      email: "Электронная почта"
+      password: "Пароль"
+
   links:
     home: "краудфандинг"
+    sign_up: "Зарегестрироваться"
+    sign_in: "Войти"
+    sign_out: "Выйти"
+    profile: "Профиль"
+    forgot_your_password: "Забыли пароль ?"
+    log_in: "Авторизироваться"
+    goal: "Цель"
+    image: "Картинка"
+    days_to_go: "Дата закрытия проекта"
+    comment: "Комментария"
+    delete_comment: "Удалить комментарий"
+    comment_label: "Комментарий"
+    write_comment: "Введите текст..."
+    pledge: "Инвестировать"
+    create: "Создать"
+    delete_project: "Удалить Проект"
+    delete_project_confirmation: "Вы уверены, что хотие удалить проект"
+    close: "Закрыть"
+
+
+
 
   projects:
     header: "Проекты"
     colllected: "собрано"
+    welcome: "Войдите или зарегестрируйтесь"
+    changeTheme: "Изменить тему"
+    lang: "Язык"
+    create_new: "Создать новый проект"
+    pledged_of: "инвестировано из"
+    goal: "цели"
+    invest: "Инвестировать в проект"
+    all_investitions: "Инвестиции проекта"
+    related_ptojects: "Недавние проекты"
+    has: "имеет"
+    commented: "прокомментировал"
+    ago: "назад"
+    create: "Создать"
+    how_much_invest: "Сколько Вы желаете инвестировать в проект"
 
 
   activerecord:
@@ -272,3 +311,7 @@ ru:
       default: "%a, %d %b %Y, %H:%M:%S %z"
       long: "%d %B %Y, %H:%M"
       short: "%d %b, %H:%M"
+
+
+
+

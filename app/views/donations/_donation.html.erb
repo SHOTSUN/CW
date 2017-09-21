@@ -1,7 +1,3 @@
-
-<h2> This post has <%= pluralize(@project.donations.count, "Donation") %> </h2>
-
-
 <% @project.donations.each do |donation| %>
 
     <div class="panel panel-default">

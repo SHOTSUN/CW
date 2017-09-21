@@ -12,32 +12,30 @@
 
         <% if current_user %>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" <%= link_to "Sign out", destroy_user_session_path, method: "delete" %></a>
+              <a class="nav-link js-scroll-trigger" <%= link_to t('links.sign_out'), destroy_user_session_path, method: "delete" %></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" <%= link_to "Profile", current_user %></a>
+              <a class="nav-link js-scroll-trigger" <%= link_to t('links.profile'), user_root_path %></a>
             </li>
 
       <% else %>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" <%= link_to "Sign in", new_user_session_path %></a>
+              <a class="nav-link js-scroll-trigger" <%= link_to t('links.sign_in'), new_user_session_path %></a>
             </li>
         <% end %>
         </li>
-        <button id = "change-theme-btn"> Change theme</button>
+        <button id = "change-theme-btn"> <%= t "projects.changeTheme" %></button>
 
 
 
 
-        <div class='hero aligin'>
-          <div class="dropdown">
-            <button class="dropbtn">Language</button>
+          <div class="dropdown lang-btn">
+            <button class="dropbtn lang-btn"> <%= t "projects.lang" %> </button>
             <div class="dropdown-content">
               <%= link_to_unless_current "English", locale: "en" %>
               <%= link_to_unless_current "Русский", locale: "ru" %>
             </div>
           </div>
-        </div>
 
       </ul>
     </div>

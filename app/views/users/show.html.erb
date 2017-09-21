@@ -7,7 +7,7 @@
       <h3 class="panel-title"><%= current_user.email %></h3>
     </div>
     <div class="col col-xs-6 text-right">
-      <a type="button" class="btn btn-sm btn-primary btn-success" <%= link_to "Create new Project", new_project_path %></button>
+      <a type="button" class="btn btn-sm btn-primary btn-success" <%= link_to t("projects.create_new"), new_project_path %></button>
     </div>
   </div>
 </div>
@@ -40,27 +40,25 @@
         <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= post.collected %></i></h3>
 
         <span class="block navy-600 type-12 type-14-md lh3-lg">
-          pledged of <span class="money">$<%= post.pledge %></span> <span class="mobile-hide">goal</span>
+          <%= t("projects.pledged_of") %> <span class="money">$<%= post.pledge %></span>
         </span>
 
 
 
         <div class="progress">
-          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">
-            <%= post.calculateProgress %>%Complete (success)
-          </div>
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%"></div>
         </div>
 
-        <a href="#<%=post.title%>" class="btn btn-danger btn-block" data-toggle="modal">Delete Project</a>
+        <a href="#<%=post.title%>" class="btn btn-danger btn-block" data-toggle="modal"><%= t("links.delete_project") %></a>
         <div id="<%=post.title%>" class="modal fade">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-body">
-                Are you sure you want to delete the project <%= post.title%>?
+                <%= t("links.delete_project_confirmation") %> <%= post.title%>?
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <a type="button" class="btn btn-danger" <%= link_to "Delete", dest_project_path(post) %></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><%= t("links.close") %></button>
+                <a type="button" class="btn btn-danger" <%= link_to t("links.delete_project"), dest_project_path(post) %></button>
               </div>
             </div>
           </div>

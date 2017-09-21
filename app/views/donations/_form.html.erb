@@ -1,5 +1,6 @@
 <%= bootstrap_form_for([@project, @project.donations.new]) do |f|%>
-    <%= f.number_field :pledge, min: 1%>
-    <%= f.submit "Create" %>
+  <%= f.number_field :pledge, min: 1, label: t("links.pledge")%>
+  <%= f.submit t("links.create") %>
 <%end%>
+
 

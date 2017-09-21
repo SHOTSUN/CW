@@ -1,34 +1,6 @@
-
-<!-- Header -->
-<header class="masthead">
-    <div class="intro-text">
-      <span class="name">Sign in or sign up now</span>
-      <hr class="star-light">
-      <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-success" %>
-      <%= link_to "Sign in ", new_user_session_path, class: "btn btn-success" %>
-
-
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a class="btn-social btn-outline" href="#">
-            <i class="fa fa-fw fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-social btn-outline" href="#">
-            <i class="fa fa-fw fa-vk"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-social btn-outline" href="#">
-            <i class="fa fa-fw fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-</header>
+<%if !current_user%>
+    <%= render 'home/welcome' %>
+<%end%>
 
 <%= render 'projects/showAll' %>
 

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
+  root to: "home#index"
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   get 'home/index'
 
   get '/profile' => "users#show", as: :user_root
@@ -12,10 +13,10 @@ Rails.application.routes.draw do
   post 'projects/new'
 
   resources :project, only: [:index, :create]
-  root to: "projects#index"
 
 
-  devise_for :users, :controllers => { :omniauth_callbacks => 'callbacks'}
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks"}
 
   scope ":locale" do
 
@@ -27,7 +28,6 @@ Rails.application.routes.draw do
       end
     end
 
-    resources  :users
     root "home#index"
     root "users#index"
     root "projects#index"
