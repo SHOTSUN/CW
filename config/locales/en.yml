@@ -24,6 +24,8 @@ en:
   devise:
     email: "email"
     password: "password"
+    password_confirmation: "Password confirmation"
+    forgot_password: "Forgot your password?"
 
   projects:
     header: "Projects"

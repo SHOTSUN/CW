@@ -17,7 +17,6 @@ gem 'omniauth'
 gem 'omniauth-oauth'
 gem 'omniauth-vkontakte'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
 gem "paperclip", "~> 5.0.0"
 gem 'cocaine'
 

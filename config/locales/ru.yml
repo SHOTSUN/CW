@@ -3,6 +3,8 @@ ru:
   devise:
       email: "Электронная почта"
       password: "Пароль"
+      password_confirmation: "Подтверждение пароля"
+      forgot_password: "Забыли пароль?"
 
   links:
     home: "краудфандинг"
