@@ -2,16 +2,13 @@
     <div class="intro-text">
       <span class="name"> <%= t "projects.welcome" %></span>
 
-      <%= link_to t("links.signup"), new_user_registration_path, class: "btn btn-success" %>
-      <%= link_to t("links.signin"), new_user_session_path, class: "btn btn-success" %>
-
-
-
+      <%= link_to t("links.sign_up"), new_user_registration_path, class: "btn btn-success" %>
+      <%= link_to t("links.sign_in"), new_user_session_path, class: "btn btn-success" %>
 
     </div>
 
-    		<h1 class="fa fa-facebook-square" aria-hidden="true"> <%= link_to 'Facebook', user_facebook_omniauth_authorize_path%></h1   >
-    		<li class="fa fa-vk" aria-hidden="true fomnt_size= 50"> <%= link_to 'Vkontakte', user_vkontakte_omniauth_authorize_path%></li>
-        </a>
+    <li class="fa fa-facebook-square" aria-hidden="true"> <%= link_to 'Facebook', user_facebook_omniauth_authorize_path%></li   >
+    <li class="fa fa-vk" aria-hidden="true fomnt_size= 50"> <%= link_to 'Vkontakte', user_vkontakte_omniauth_authorize_path%></li>
+    </a>
 
 </header>

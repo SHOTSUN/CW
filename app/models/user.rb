@@ -7,11 +7,8 @@ class User < ApplicationRecord
 
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable,
-         :omniauth_providers => [:twitter, :facebook, :vkontakte]
-#:confirmable,
-
-
+         :recoverable, :rememberable, :trackable, :validatable,
+         :confirmable, :omniauthable,:omniauth_providers => [:twitter, :facebook, :vkontakte]
 
 
   def self.from_omniauth(auth)
@@ -22,10 +19,5 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0, 20]
     end
   end
-
-
-
-
-
 
 end

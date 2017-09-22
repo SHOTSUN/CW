@@ -5,6 +5,8 @@ ru:
       password: "Пароль"
       password_confirmation: "Подтверждение пароля"
       forgot_password: "Забыли пароль?"
+      email_confirm: "Нажмите на ссылку, чтобы продолжить регистрацию:"
+      confirm_link: "Подтвердить аккаунт"
 
   links:
     home: "краудфандинг"
@@ -26,6 +28,7 @@ ru:
     delete_project: "Удалить Проект"
     delete_project_confirmation: "Вы уверены, что хотие удалить проект"
     close: "Закрыть"
+    resend_confirmation_instructions: "Повторно отправить инструкции подтверждения"
 
 
 
@@ -47,6 +50,8 @@ ru:
     ago: "назад"
     create: "Создать"
     how_much_invest: "Сколько Вы желаете инвестировать в проект"
+    days_to_go: "дней до начала"
+    admin: "Панель администратора"
 
 
   activerecord:

@@ -13,18 +13,15 @@ class CommentsController < ApplicationController
     else
       render 'new'
     end
-
   end
 
   def show
     @comments = Comment.where(project_id: @project).order("created_at DESC")
-
   end
 
   def destroy
     @comment.destroy
     redirect_to project_path(@project)
-
   end
 
 

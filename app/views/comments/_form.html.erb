@@ -1,9 +1,7 @@
-<div class="pledge_margin "  >
-
-<%= bootstrap_form_for([@project, @project.comments.new]) do |f|%>
-  <%= f.text_area :content, label: t("links.comment_label"),:required => true, placeholder: t("links.write_comment") %>
-  <%= f.submit t("projects.create") %>
-<%end%>
-
+<div class="comment_margin "  >
+  <%= bootstrap_form_for([@project, @project.comments.new]) do |f|%>
+    <%= f.text_area :content, label: t("links.comment_label"),:required => true, placeholder: t("links.write_comment") %>
+    <%= f.submit t("projects.create") %>
+  <%end%>
 </div>
 

@@ -9,36 +9,52 @@
 
           <div class="content-box large">
 
-            <div class="progress">
-              <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= @project.calculateProgress %>%">
-              </div>
-            </div>
-
             <h3><%= @project.title %></h3>
             <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= @project.collected %></i></h3>
-
-            <span class="block navy-600 type-12 type-14-md lh3-lg">
-              <%= t("projects.pledged_of") %> <span class="money">$<%= @project.pledge %></span>
-            </span>
-
-            <a href="#<%=@project.title%>" class="btn btn-success btn-block" data-toggle="modal"> <%= t("projects.invest") %> </a>
-            <div id="<%=@project.title%>" class="modal fade">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <%= t("projects.how_much_invest")%> <%= @project.title%> ?
+            <div class="ksr_page_timer mr2">
+              <span class="js-text ml1">
+                <%if @project.remainingsDays > 0 %>
+                  <div class="progress">
+                      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= @project.calculateProgress %>%">
+                      </div>
+                    </div>
+                <%else%>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style=width:100%>
+                    </div>
                   </div>
+                <%end%>
+              </span>
+              <div class="ksr_page_timer mr2">
+                <span class="js-text ml1"> <%= (@project.remainingsDays / 24.hours) %> <%= t("projects.days_to_go")%></span>
+              </div>
+          </div>
 
-                  <%= render 'donations/form' %>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
+          <span class="block navy-600 type-12 type-14-md lh3-lg">
+            <%= t("projects.pledged_of") %> <span class="money">$<%= @project.pledge %></span>
+          </span>
+          <%if current_user%>
+          <a href="#<%=@project.title.to_i%>" class="btn btn-success btn-block" data-toggle="modal"> <%= t("projects.invest") %> </a>
+          <div id="<%=@project.title.to_i%>" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <%= t("projects.how_much_invest")%> <%= @project.title%> ?
+                </div>
+                
+
+                <%= render 'donations/form' %>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
-
-
           </div>
+          <%end%>
+
+        </div>
+
+
           <div class='hero center'>
             <div class="dropdown">
               <button class="dropbtn"> <%= t("projects.all_investitions") %> </button>
@@ -55,19 +71,20 @@
 
         </div>
 
+
+
         <div class="col-sm-12">
+          <hr>
           <p>  <%= @project.body %> </p>
         </div>
       </div>
 
     </div>
 
-
-    <%= render 'comments/comment' %>
+  <%= render 'comments/comment' %>
   <%if current_user%>
     <%= render 'comments/form' %>
   <%end%>
-
 
   <!-- Related Projects Row -->
   <div class="row">
@@ -76,25 +93,14 @@
       <h3 class="page-header"> <%= t("projects.related_ptojects") %></h3>
     </div>
 
-    <div class="row">
-
-
-
-    </div>
-
     <% @projects.each do |post| %>
         <div class="col-sm-3 col-xs-4">
           <%= link_to project_path(post) do %>
               <%= image_tag post.image.url(:smallest) %>
           <% end %>
-
         </div>
     <% end %>
-
-
   </div>
-
-
 </div>
 
 

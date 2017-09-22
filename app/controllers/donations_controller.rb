@@ -14,18 +14,15 @@ class DonationsController < ApplicationController
     else
       render 'new'
     end
-
   end
 
   def show
     @donations = Donation.where(project_id: @project).order("created_at DESC")
-
   end
 
   def destroy
     @donation.destroy
     redirect_to project_path(@project)
-
   end
 
 

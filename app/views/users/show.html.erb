@@ -12,71 +12,88 @@
 
 <% current_user.projects.each do |post| %>
 
+  <div class="content-box-large">
 
-<div class="content-box-large">
+    <div class="row">
 
-
-  <div class="row">
-
-    <div class="col-sm-6">
-      <%= image_tag post.image.url(:normal) %>
-    </div>
+      <div class="col-sm-6">
+        <%= image_tag post.image.url(:normal) %>
+      </div>
 
 
-    <div class="col-sm-5">
+      <div class="col-sm-5">
 
+        <div class="content-box large">
+          <td class="text-right" aria-setsize="50">
+            <%= post.title %>
+          </td>
 
+          <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= post.collected %></i></h3>
 
-      <div class="content-box large">
-        <td class="text-right" aria-setsize="50">
-        <%= post.title %>
-        </td>
-        <h3 class="block green-700 js-pledged medium type-16 type-24-md"> $ <%= post.collected %></i></h3>
+          <span class="block navy-600 type-12 type-14-md lh3-lg">
+            <%= t("projects.pledged_of") %> <span class="money">$<%= post.pledge %></span>
+          </span>
 
-        <span class="block navy-600 type-12 type-14-md lh3-lg">
-          <%= t("projects.pledged_of") %> <span class="money">$<%= post.pledge %></span>
-        </span>
+          <div class="ksr_page_timer mr2">
+            <span class="js-text ml1"> <%= (post.remainingsDays / 24.hours) %> <%= t("projects.days_to_go")%></span>
+          </div>
 
+          <div class="progress">
+            <%if post.remainingsDays > 0 %>
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%"></div>
+            <%else%>
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style=width:100%></div></div>
+            <%end%>
+          </div>
 
-
-        <div class="progress">
-          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%"></div>
-        </div>
-
-        <a href="#<%=post.title%>" class="btn btn-danger btn-block" data-toggle="modal"><%= t("links.delete_project") %></a>
-        <div id="<%=post.title%>" class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                <%= t("links.delete_project_confirmation") %> <%= post.title%>?
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><%= t("links.close") %></button>
-                <a type="button" class="btn btn-danger" <%= link_to t("links.delete_project"), dest_project_path(post) %></button>
+          <a href="#<%=post.title.to_i%>" class="btn btn-danger btn-block" data-toggle="modal"><%= t("links.delete_project") %></a>
+          <div id="<%=post.title.to_i%>" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <%= t("links.delete_project_confirmation") %> <%= post.title%>?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><%= t("links.close") %></button>
+                  <a type="button" class="btn btn-danger" <%= link_to t("links.delete_project"), dest_project_path(post) %></button>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
-
-
-
       </div>
+    </div>
+
+    <hr>
+
+    <div>
+      <p>  <%= post.body %> </p>
 
     </div>
 
+    <h2> <%= pluralize(post.comments.count, t("links.comment")) %> </h2>
 
+    <% post.comments.each do |comment| %>
+        <div class="panel panel-default comment_margin "  >
+          <div class="panel-heading">
 
+            <strong> <%= comment.user.email %> </strong>
+            <span class="date"> <%= t("projects.commented") %>
+              <%= time_ago_in_words(comment.created_at) %>
+              <%= t("projects.ago") %>
+      </span>
 
+          </div>
 
-  </div>
+          <div class="panel-body">
+            <%= comment.content %>
+          </div>
+        </div>
 
-  <div>
-    <p>  <%= post.body %> </p>
-  </div>
+    <% end %>
 
-</div>
-
-
+    </div>
 
 <% end %>
 

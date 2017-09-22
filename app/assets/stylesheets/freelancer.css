@@ -160,8 +160,8 @@ header.masthead {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
-  color: white;
-  background: #18BC9C; }
+  color: #333;
+  background: #eee; }
   header.masthead img {
     display: block;
     margin: 0 auto 20px; }

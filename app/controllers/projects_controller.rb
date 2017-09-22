@@ -26,7 +26,6 @@ class ProjectsController < ApplicationController
      else
        flash[:danger] = @project.errors.full_messages.join(", ")
        redirect_to new_project_path
-       #render json: {error: @project.errors.full_messages.join(", ")}, status: 400
     end
 
   end
@@ -42,6 +41,4 @@ class ProjectsController < ApplicationController
     def project_params
       params.require(:project).permit(:title, :body, :image, :pledge, :lastDate)
     end
-
-
 end

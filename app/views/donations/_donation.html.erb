@@ -1,13 +1,13 @@
 <% @project.donations.each do |donation| %>
 
-    <div class="panel panel-default">
+    <div class="panel panel-default form-size">
       <div class="panel-heading">
         <strong> <%= donation.project.user.email %> </strong>
       </div>
       <div class="panel-body">
         <%= donation.pledge %>
         <%= link_to "Delete comment", [donation.project, donation], method: :delete %>
-      </div><!-- /panel-body -->
-    </div><!-- /panel panel-default -->
+      </div>
+    </div>
 
 <% end %>

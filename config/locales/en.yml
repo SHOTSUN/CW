@@ -26,6 +26,9 @@ en:
     password: "password"
     password_confirmation: "Password confirmation"
     forgot_password: "Forgot your password?"
+    email_confirm: "You can confirm your account email through the link below:"
+    confirm_link: "Congirm account"
+
 
   projects:
     header: "Projects"
@@ -43,13 +46,15 @@ en:
     has: "has"
     commented: "commented"
     ago: "ago"
-    create: "Создать"
+    create: "Create"
     how_much_invest: "How much do you want to invest in"
+    days_to_go: "days to go"
+    admin: "Admin pannel"
 
 
 
   links:
-      home: "crowdfanding"
+      home: "crowdfunding"
       sign_up: "Sign up"
       sign_in: "Sign in"
       sign_out: "Sign out"
@@ -67,4 +72,6 @@ en:
       delete_project: "Delete Project"
       delete_project_confirmation: "Are you sure you want to delete the project"
       close: "Close"
+      resend_confirmation_instructions: "Resend confirmation instructions"
+
 

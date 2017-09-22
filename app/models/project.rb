@@ -11,13 +11,13 @@ class Project < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   def remainingsDays
-    (self.lastDate - DateTime.now).to_i.abs
+    delta = (self.lastDate - DateTime.now).to_i
+    delta < 0 ? 0 :delta
   end
 
 
   def calculateProgress
    ((self.collected.fdiv self.pledge)*100).round
-
   end
 
   def add(value)
@@ -30,10 +30,6 @@ class Project < ApplicationRecord
     if DateTime.now > self.lastDate
       errors.add(:endDate, "should be greater than start date")
     end
-
   end
-
-
-
 
 end

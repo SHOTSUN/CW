@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-#HELLO
-
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'rails_admin', '~> 1.2'
@@ -19,6 +17,7 @@ gem 'omniauth-vkontakte'
 gem 'omniauth-facebook'
 gem "paperclip", "~> 5.0.0"
 gem 'cocaine'
+gem 'font-awesome-sass'
 
 
 

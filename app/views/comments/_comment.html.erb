@@ -1,22 +1,24 @@
-
-<h2> <%= @project.title %> <%= t("projects.has") %> <%= pluralize(@project.comments.count, t("links.comment")) %> </h2>
+<h2> <%= pluralize(@project.comments.count, t("links.comment")) %> </h2>
 
 <% @project.comments.each do |comment| %>
-
   <div class="panel panel-default comment_margin "  >
     <div class="panel-heading">
+
       <strong> <%= comment.user.email %> </strong>
-      <span class="date"> <%= t("projects.commented") %> <%= time_ago_in_words(comment.created_at) %> <%= t("projects.ago") %> </span>
+      <span class="date"> <%= t("projects.commented") %>
+        <%= time_ago_in_words(comment.created_at) %>
+        <%= t("projects.ago") %>
+      </span>
+
       <%if @project.user == current_user%>
          (<%= link_to t("links.delete_comment"), [comment.project, comment], method: :delete %>)
       <%end%>
-
     </div>
 
     <div class="panel-body">
       <%= comment.content %>
-    </div><!-- /panel-body -->
-  </div><!-- /panel panel-default -->
+    </div>
+  </div>
 
 <% end %>
 

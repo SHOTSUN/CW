@@ -102,7 +102,7 @@ body {
 
 hr {
   box-sizing: content-box;
-  height: 0;
+  height: 1;
   overflow: visible;
 }
 
