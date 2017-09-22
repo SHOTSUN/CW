@@ -13,13 +13,14 @@
 
     <div class="row">
       <% Project.find_each do |post| %>
+
           <div class="col-sm-4 portfolio-item">
             <div class="content-box-large">
             <div class="page-header" align="center">
               <h4><%= truncate(post.title, :length => 24) %></h4>
             </div>
             <%= link_to project_path(post) do %>
-                <%= image_tag post.image, width: 300%>
+                <%= image_tag post.image.url(:medium)%>
             <% end %>
                 <div class="progress">
                   <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">

@@ -24,9 +24,9 @@ class ProjectsController < ApplicationController
       flash[:success] = "Project was successfully created !"
       redirect_to @project
      else
-       flash[:danger] = "Closing date of the project must be more current !"
-       redirect_to new_project_path
-       #render json: {error: @project.errors.full_messages.join(", ")}, status: 400
+       #flash[:danger] = "Closing date of the project must be more current !"
+       #redirect_to new_project_path
+       render json: {error: @project.errors.full_messages.join(", ")}, status: 400
     end
 
   end

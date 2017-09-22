@@ -6,7 +6,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'rails_admin', '~> 1.2'
 
-gem 'paperclip'
+
 gem 'dropzonejs-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
@@ -18,6 +18,9 @@ gem 'omniauth-oauth'
 gem 'omniauth-vkontakte'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
+gem "paperclip", "~> 5.0.0"
+gem 'cocaine'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
