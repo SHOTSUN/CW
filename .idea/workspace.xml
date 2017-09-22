@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fc1799-c84a-41cf-923e-43da4b55d6ac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/024/normal/de0b2db39e74e7328bcc6590d9c2c419.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/024/original/de0b2db39e74e7328bcc6590d9c2c419.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/024/smallest/de0b2db39e74e7328bcc6590d9c2c419.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/024/square/de0b2db39e74e7328bcc6590d9c2c419.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/сroweding.iml" afterPath="$PROJECT_DIR$/.idea/сroweding.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
@@ -561,12 +565,12 @@
       <workItem from="1505944347188" duration="9691000" />
       <workItem from="1505985604801" duration="4134000" />
       <workItem from="1506008146383" duration="12772000" />
-      <workItem from="1506029926460" duration="25684000" />
+      <workItem from="1506029926460" duration="25722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295463000" />
+    <option name="totallyTimeSpent" value="295501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
