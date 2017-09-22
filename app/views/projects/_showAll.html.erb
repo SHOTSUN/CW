@@ -19,7 +19,7 @@
               <h4><%= truncate(post.title, :length => 24) %></h4>
             </div>
             <%= link_to project_path(post) do %>
-                <%= image_tag post.image, height: 350 %>
+                <%= image_tag post.image, width: 300%>
             <% end %>
                 <div class="progress">
                   <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<%= post.calculateProgress %>%">

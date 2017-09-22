@@ -21,10 +21,12 @@ class ProjectsController < ApplicationController
 
 
     if @project.save
-
-      redirect_to project_path(@project)
+      flash[:success] = "Project was successfully created !"
+      redirect_to @project
      else
-       render json: {error: @project.errors.full_messages.join(", ")}, status: 400
+       flash[:danger] = "Closing date of the project must be more current !"
+       redirect_to new_project_path
+       #render json: {error: @project.errors.full_messages.join(", ")}, status: 400
     end
 
   end

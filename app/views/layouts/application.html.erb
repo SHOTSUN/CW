@@ -22,10 +22,16 @@
 
 <body>
 
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
 
 <div class="container">
   <%= yield %>
 </div>
+
 <%= render 'layouts/shared/footer' %>
 </body>
+
 </html>

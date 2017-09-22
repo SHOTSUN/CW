@@ -3071,7 +3071,6 @@ tbody.collapse.show {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: .5rem;
     padding-left: .5rem;
-
   }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -3859,12 +3858,40 @@ tbody.collapse.show {
   border-color: #c3e6cb;
 }
 
+.photoBorder {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+
+//стили которые непостредственно масштабируют картинку с сохранением пропорций
+background-repeat     : no-repeat;
+    background-size       : cover;
+    background-position-x : 50%;
+    background-position-y : 50%;
+}
+
 .alert-success hr {
   border-top-color: #b1dfbb;
 }
 
 .alert-success .alert-link {
   color: #0b2e13;
+}
+
+
+
+.alert-notice {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-notice hr {
+    border-top-color: #b1dfbb;
+}
+
+.alert-notice .alert-link {
+    color: #0b2e13;
 }
 
 .alert-info {

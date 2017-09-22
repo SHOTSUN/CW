@@ -12,6 +12,8 @@ class User < ApplicationRecord
 #:confirmable,
 
 
+
+
   def self.find_for_vkontakte_oauth access_token
     if user = User.where(:url => access_token.info.urls.Vkontakte).first
       user

@@ -1,18 +1,37 @@
-<h1>New project </h1>
+<h1> <%= t("projects.create_new") %> </h1>
+
+<div class="form-size">
+<div class="content-box-large">
 
 <%= bootstrap_form_for(@project) do |f| %>
-    <%= f.number_field :pledge, min: 1, label: t("links.goal") %>
-    <%= f.text_field :title, hide_label: true, placeholder: "Wrire Project name..." %>
-    <%= f.text_area :body, hide_label: true, placeholder: "Wrire description..." %>
-    <%= f.file_field :image, accept:'image/png', label: t("links.image") %>
+    <%= f.number_field :pledge, required: true, min: 1, label: t("links.goal") %>
+    <%= f.text_field :title, hide_label: true, required: true, placeholder: "Wrire Project name..." %>
+    <%= f.text_area :body, hide_label: true, required: true, placeholder: "Wrire description..." %>
+
+    <img id="img_prev" style="width: 100%" />
+    <%= f.file_field :image, :onchange => "readURL(this);", required: true, accept:'image/png,image/jpeg', label: t("links.image") %>
     <%= f.date_select :lastDate, start_year: Date.today.year, label: t("links.days_to_go") %>
-
-
-
     <%= f.submit t("projects.create_new")%>
+  <% end %>
+
+</div>
+</div>
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img_prev')
+                        .attr('src', e.target.result)
+                        .width(300);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 
 
-
-
-<% end %>
 
