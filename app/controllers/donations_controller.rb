@@ -6,7 +6,6 @@ class DonationsController < ApplicationController
   def create
     @donation = @project.donations.create(params[:donation].permit(:pledge))
     @donation.user_id = current_user.id
-    @donation.save
 
     if @donation.save
       @project.add(@donation.pledge)

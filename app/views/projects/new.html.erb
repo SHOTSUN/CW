@@ -4,12 +4,12 @@
 <div class="content-box-large">
 
 <%= bootstrap_form_for@project, html: { multipart: true} do |f| %>
-    <%= f.number_field :pledge, required: true, min: 1, label: t("links.goal") %>
-    <%= f.text_field :title, hide_label: true, required: true, placeholder: "Wrire Project name..." %>
-    <%= f.text_area :body, hide_label: true, required: true, placeholder: "Wrire description..." %>
+    <%= f.number_field :pledge, min: 1, label: t("links.goal") %>
+    <%= f.text_field :title, required: true, placeholder: "Wrire Project name..." %>
+    <%= f.text_area :body, hide_label: true, placeholder: "Wrire description..." %>
 
     <img id="img_prev" />
-    <%= f.file_field :image, :onchange => "readURL(this);", required: true, accept:'image/png,image/jpeg', label: t("links.image") %>
+    <%= f.file_field :image, :onchange => "readURL(this);", accept:'image/png,image/jpeg', label: t("links.image") %>
     <%= f.date_select :lastDate, start_year: Date.today.year, label: t("links.days_to_go") %>
     <%= f.submit t("projects.create_new")%>
   <% end %>

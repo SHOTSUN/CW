@@ -4,6 +4,14 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :donations, dependent: :destroy
 
+  before_save { self.email = email.downcase }
+
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, length: { maximum: 20, minimum: 3 },
+            format: { with: VALID_EMAIL_REGEX }, uniqueness: true
+  validates :password, presence: true, length: { maximum: 20, minimum: 6 }
+  validates :password_confirmation, presence: true, length: { maximum: 20, minimum: 6 }
+
 
 
   devise :database_authenticatable, :registerable,

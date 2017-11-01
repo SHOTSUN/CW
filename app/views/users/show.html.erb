@@ -2,13 +2,36 @@
 <div class="panel-heading">
   <div class="row">
     <div class="col col-xs-6">
-      <h3 class="panel-title"><%= current_user.email %></h3>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <%= current_user.email %>
+      </a>
+
+      <ul class="dropdown-menu">
+
+          <% current_user.donations.each do |donation| %>
+
+            <li>
+              <span class="block navy-600 type-12 type-14-md lh3-lg">
+                $<%= donation.pledge %> pledged to <%= donation.project.title %>
+              </span>
+
+            </li>
+          <%end%>
+
+
+      </ul>
     </div>
     <div class="col col-xs-6 text-right">
       <a type="button" class="btn btn-sm btn-primary btn-success" <%= link_to t("projects.create_new"), new_project_path %></button>
     </div>
   </div>
 </div>
+
+
+
+
+
+
 
 <% current_user.projects.each do |post| %>
 

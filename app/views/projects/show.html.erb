@@ -33,6 +33,9 @@
           <span class="block navy-600 type-12 type-14-md lh3-lg">
             <%= t("projects.pledged_of") %> <span class="money">$<%= @project.pledge %></span>
           </span>
+            <p> Created by: <%= @project.user.email %></p>ша
+
+
           <%if current_user%>
           <a href="#<%=@project.title.to_i%>" class="btn btn-success btn-block" data-toggle="modal"> <%= t("projects.invest") %> </a>
           <div id="<%=@project.title.to_i%>" class="modal fade">
@@ -41,7 +44,7 @@
                 <div class="modal-body">
                   <%= t("projects.how_much_invest")%> <%= @project.title%> ?
                 </div>
-                
+
 
                 <%= render 'donations/form' %>
                 <div class="modal-footer">

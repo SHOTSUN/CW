@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
   def create
     @comment = @project.comments.create(params[:comment].permit(:content))
     @comment.user_id = current_user.id
-    @comment.save
 
     if @comment.save
       redirect_to project_path(@project)
