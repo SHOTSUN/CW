@@ -63,10 +63,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'mysql2', '~> 0.3.18'
+gem 'pg'
 
 group :production do
-  gem 'pg'
+
   gem 'rails_12factor'
 end
 

@@ -17,16 +17,10 @@ default: &default
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
 
-<% socket_locations = %w[/opt/local/var/run/mysql5/mysqld.sock /var/lib/mysql/mysql.sock /tmp/mysql.sock] %>
-
 development:
-  adapter: mysql
-  encoding: utf8
+  <<: *default
   database: сroweding_development
-  username: SHOTSUN
-  password: KVK1997KVK
-  host: 127.0.0.1
-  socket: <%= socket_locations.detect { |f| File.exists?(f) } %>
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
