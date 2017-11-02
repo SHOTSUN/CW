@@ -15,6 +15,7 @@ default: &default
   pool: 5
   username: root
   password: KVK1997KVK
+  localhost: 127.0.0.1
 
 development:
   <<: *default
