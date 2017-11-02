@@ -15,20 +15,11 @@ default: &default
   pool: 5
   username: root
   password: KVK1997KVK
-  localhost: 127.0.0.1
-  socket: /tmp/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
   database: сroweding_development
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
-  username: root
-  password: KVK1997KVK
-  localhost: 127.0.0.1
-  socket: /tmp/mysqld.sock
-
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,7 +40,7 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-  #   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
 #
@@ -61,5 +52,3 @@ production:
   database: сroweding_production
   username: сroweding
   password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
-  host: 127.0.0.1
-  port: 3306
