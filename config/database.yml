@@ -16,10 +16,18 @@ default: &default
   username: root
   password: KVK1997KVK
   localhost: 127.0.0.1
+  socket: /tmp/mysqld.sock
 
 development:
   <<: *default
   database: сroweding_development
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: KVK1997KVK
+  localhost: 127.0.0.1
+  socket: /tmp/mysqld.sock
 
 
 # Warning: The database defined as "test" will be erased and
