@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  localhost: 127.0.0.1
   database: сroweding_production
   username: сroweding
   password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
