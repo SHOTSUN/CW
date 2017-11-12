@@ -16,6 +16,7 @@ default: &default
   username: root
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
+  port: 3300
 
 development:
   <<: *default
