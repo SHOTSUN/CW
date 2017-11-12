@@ -10,7 +10,7 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter: mysqld2
   encoding: utf8
   pool: 5
   username: root
@@ -18,7 +18,7 @@ default: &default
   socket: /var/run/mysqld/mysqld.sock
 
 development:
-  adapter: mysql2
+  adapter: mysqld2
   host: 127.0.0.1
   username: root
   password: KVK1997KVK
