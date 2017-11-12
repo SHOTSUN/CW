@@ -17,7 +17,6 @@ default: &default
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
 
-
 development:
   <<: *default
   database: сroweding_development
@@ -49,8 +48,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-
+  <<: *default
   database: сroweding_development
-  adapter: postgresql
-  host: localhost
-  password: KVK1997KVK
+  username: rails
+  password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
