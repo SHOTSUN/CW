@@ -49,7 +49,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
   database: сroweding_development
-  username: rails
-  password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
+  pool: 5
+  timeout: 5000
