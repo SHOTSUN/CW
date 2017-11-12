@@ -121,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
-              <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+              <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -133,7 +133,7 @@
             <state relative-caret-position="522">
               <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
-                <marker date="1510511564212" expanded="true" signature="776:2940" ph="do ... end" />
+                <marker date="1510512728444" expanded="true" signature="776:2940" ph="do ... end" />
               </folding>
             </state>
           </provider>
@@ -538,7 +538,7 @@
       <workItem from="1509639346309" duration="5765000" />
       <workItem from="1509662011888" duration="659000" />
       <workItem from="1510492631309" duration="9573000" />
-      <workItem from="1510506338553" duration="5215000" />
+      <workItem from="1510506338553" duration="5540000" />
     </task>
     <servers />
   </component>
@@ -554,7 +554,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382497000" />
+    <option name="totallyTimeSpent" value="382822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="6" width="1309" height="772" extended-state="6" />
@@ -920,7 +920,7 @@
         <state relative-caret-position="522">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
-            <marker date="1510511564212" expanded="true" signature="776:2940" ph="do ... end" />
+            <marker date="1510512728444" expanded="true" signature="776:2940" ph="do ... end" />
           </folding>
         </state>
       </provider>
@@ -952,7 +952,7 @@
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
-          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding />
         </state>
       </provider>
