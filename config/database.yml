@@ -10,18 +10,16 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: mysqld2
+  adapter: mysql2
   encoding: utf8
   pool: 5
   username: root
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
+  database: сroweding_developments
 
 development:
-  adapter: mysqld2
-  host: 127.0.0.1
-  username: root
-  password: KVK1997KVK
+  <<: *default
   database: сroweding_development
 
 # Warning: The database defined as "test" will be erased and
