@@ -18,7 +18,7 @@ gem 'omniauth-facebook'
 gem "paperclip", "~> 5.0.0"
 gem 'cocaine'
 gem 'font-awesome-sass'
-
+gem "rails_12factor", group: :production
 
 group :development, :test do
   gem 'rspec-rails'
@@ -61,17 +61,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-
-end
-
-group :development do
   gem 'sqlite3'
+
 end
 
-
+gem 'pg'
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
