@@ -16,7 +16,6 @@ default: &default
   username: root
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
-  database: сroweding_developments
 
 development:
   <<: *default
@@ -50,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: сroweding_production
-  username: сroweding
-  password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
+  database: сroweding_development
+  username: root
+  password: KVK1997KVK
