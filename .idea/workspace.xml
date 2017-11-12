@@ -2,29 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05fc1799-c84a-41cf-923e-43da4b55d6ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/018/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/018/original/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/018/square/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/019/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/019/original/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/019/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/019/square/45d4deb4dc3624b1c60f5c3305183918.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/044/normal/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/044/original/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/044/smallest/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/044/square/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/045/normal/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/045/original/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/045/smallest/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/045/square/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/048/normal/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/048/original/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/048/smallest/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/048/square/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/068/original/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/069/original/Pepsi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/projects/images/000/000/071/original/Pepsi.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/001/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/002/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/002/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/002/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/002/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/003/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/003/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/003/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/003/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/004/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/004/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/004/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/004/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/005/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/005/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/005/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/005/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/006/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/006/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/006/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/006/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/007/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/007/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/007/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/007/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/008/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/008/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/008/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/008/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/009/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/009/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/009/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/009/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/014/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/014/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/014/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/014/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/015/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/015/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/015/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/015/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/016/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/016/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/016/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/016/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/079/normal/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/079/original/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/079/smallest/45d4deb4dc3624b1c60f5c3305183918.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/projects/images/000/000/079/square/45d4deb4dc3624b1c60f5c3305183918.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -93,8 +122,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            <state relative-caret-position="333">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -472,7 +501,7 @@
       <workItem from="1509612160028" duration="2176000" />
       <workItem from="1509639346309" duration="5765000" />
       <workItem from="1509662011888" duration="659000" />
-      <workItem from="1510492631309" duration="77000" />
+      <workItem from="1510492631309" duration="681000" />
     </task>
     <servers />
   </component>
@@ -488,7 +517,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367786000" />
+    <option name="totallyTimeSpent" value="368390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="6" width="1311" height="780" extended-state="6" />
@@ -874,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        <state relative-caret-position="333">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
           <folding />
         </state>
       </provider>
