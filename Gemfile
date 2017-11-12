@@ -64,8 +64,7 @@ group :development do
   gem 'mysql2'
 end
 
-gem 'pg'
-gem 'rails_12factor'
+
 
 group :production do
   gem 'pg'

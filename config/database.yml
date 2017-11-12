@@ -16,7 +16,6 @@ default: &default
   username: root
   password: KVK1997KVK
   socket: /var/run/mysqld/mysqld.sock
-  database: сroweding_development
 
 development:
   <<: *default
@@ -49,7 +48,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  adapter: postgresql
-  database: сroweding_development
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: сroweding_production
+  username: сroweding
+  password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
