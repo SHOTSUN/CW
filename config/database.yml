@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: сroweding_production
-  username: сroweding
-  password: <%= ENV['сROWEDING_DATABASE_PASSWORD'] %>
+  database: сroweding_development
+  username: root
+  password: KVK1997KVK
