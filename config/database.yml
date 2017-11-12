@@ -18,7 +18,10 @@ default: &default
   socket: /var/run/mysqld/mysqld.sock
 
 development:
-  <<: *default
+  adapter: mysql2
+  host: 127.0.0.1
+  username: root
+  password: KVK1997KVK
   database: сroweding_development
 
 # Warning: The database defined as "test" will be erased and
