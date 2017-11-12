@@ -10,16 +10,13 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: sqlite3
   pool: 5
-  username: root
-  password: KVK1997KVK
-  socket: /var/run/mysqld/mysqld.sock
+  timeout: 5000
 
 development:
   <<: *default
-  database: сroweding_development
+  database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +46,4 @@ test:
 #
 production:
   <<: *default
-  database: сroweding_development
-  username: root
-  password: KVK1997KVK
+  database: db/production.sqlite3
