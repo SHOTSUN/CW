@@ -12,34 +12,34 @@
 
 ActiveRecord::Schema.define(version: 20170922023308) do
 
-  create_table "comments", force: :cascade do |t|
-    t.text     "content"
+  create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text     "content",    limit: 65535
     t.integer  "project_id"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["project_id"], name: "index_comments_on_project_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.index ["project_id"], name: "index_comments_on_project_id", using: :btree
+    t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
-  create_table "donations", force: :cascade do |t|
+  create_table "donations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "pledge",     null: false
     t.integer  "project_id"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["project_id"], name: "index_donations_on_project_id"
-    t.index ["user_id"], name: "index_donations_on_user_id"
+    t.index ["project_id"], name: "index_donations_on_project_id", using: :btree
+    t.index ["user_id"], name: "index_donations_on_user_id", using: :btree
   end
 
-  create_table "projects", force: :cascade do |t|
+  create_table "projects", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
-    t.text     "body"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.text     "body",               limit: 65535
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
     t.integer  "user_id"
     t.integer  "pledge"
-    t.integer  "collected",          default: 0, null: false
+    t.integer  "collected",                        default: 0, null: false
     t.datetime "lastDate"
     t.string   "image_file_name"
     t.string   "image_content_type"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170922023308) do
     t.datetime "image_updated_at"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
@@ -68,7 +68,11 @@ ActiveRecord::Schema.define(version: 20170922023308) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
-    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   end
 
+  add_foreign_key "comments", "projects"
+  add_foreign_key "comments", "users"
+  add_foreign_key "donations", "projects"
+  add_foreign_key "donations", "users"
 end
