@@ -21,7 +21,7 @@ gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'rspec-rails'
-  #asdfg  
+  #asdfg
 end
 
 
