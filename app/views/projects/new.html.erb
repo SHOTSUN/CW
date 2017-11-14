@@ -4,7 +4,7 @@
 <div class="content-box-large">
 
 <%= bootstrap_form_for@project, html: { multipart: true} do |f| %>
-    <%= f.number_field :pledge, min: 1, label: t("links.goal") %>
+    <%= f.number_field :pledge, required: true, min: 1, label: t("links.goal") %>
     <%= f.text_field :title, required: true, placeholder: "Wrire Project name..." %>
     <%= f.text_area :body, hide_label: true, placeholder: "Wrire description..." %>
 

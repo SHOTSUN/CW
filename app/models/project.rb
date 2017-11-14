@@ -4,7 +4,7 @@ class Project < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :donations, dependent: :destroy
 
-
+  validates :pledge, presence: true
   #validate :checkDateGraterThanNow
 
   has_attached_file :image, styles: {square: "300x300#", normal: "400x400>", smallest: "150x150#" }
