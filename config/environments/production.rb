@@ -56,28 +56,10 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "сroweding_#{Rails.env}"
   config.action_mailer.perform_caching = false
-  config.action_mailer.default_url_options = { :host => "www.young-spire-30589.herokuapp.com" }
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default :charset => "utf-8"
-  config.mailer_sender = 'crowdfounding <crowdfounding@crowdfounding.com>'
-
-  config.action_mailer.smtp_settings = {
-      address: "smtp.gmail.com", #this is you remote mail server, if you do not specify it rails will use
-      port: 587, # the port at which mail server is running, for local host it is at 25
-      domain: "example.com", # just giving a domain name to you smtp server, you can use any name
-      authentication: "plain", # If your mail server requires authentication, you need to specify
-      enable_starttls_auto: true,
-      user_name: "kvladk1997@gmail.com",
-      password:  "19970501vlad"
-  }
-
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-   config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.raise_delivery_errors = false
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
